@@ -1,0 +1,76 @@
+/* default at margin 0 padding 0 */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+header{
+ display: inline-block;
+ width:100%;
+}
+
+header div{
+  display:inline-block;
+}
+
+header div img{
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+header nav{
+  display: inline-block;
+  float: right;
+  padding-top: 13px;
+}
+
+header nav a{
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  margin-right: 20px;
+  padding: 10px;
+  --webkit-transition : all 0.2s ease-in-out;
+  --o-transition : all 0.2s ease-in-out;
+  --moz-transition : all 0.2s ease-in-out;
+  --ms-transition : all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header nav a.selected{
+  border-bottom: 4px solid orange;
+}
+
+header nav a:hover{
+  color : #fff;
+  text-shadow : 0px 0px 1px #fff;
+  border-bottom : 8px solid rgba(20,0,0,0.5);
+  border-radius : 6px;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+}
+
+article.firstcrank{
+
+}
+
+article.firstcrank img{
+  width: 40%;
+}
+
+/* widescreen query */
+@media screen and (max-width: 1280px) {
+
+}
+
+/* tablet query */
+@media screen and (max-width: 800px) {
+
+}
+
+/* mobile query */
+@media screen and (max-width: 480px) {
+
+}
