@@ -14,18 +14,21 @@
       <div class="header-logo">
         <img src="res/logos.png" alt="alt.jpg">
       </div>
-      <nav>
+      <nav id="navigation">
         <a href="#" class="selected">Home</a>
-        <a href="#">Products</a>
+        <a href="#">Customiser</a>
         <a href="#">Blog</a>
         <a href="appointment.html">Appointment</a>
         <a href="#">FAQ</a>
       </nav>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+      </div>
     </header>
     <main>
       <article class="kaliedo">
-        <img src="res/bolt-promo.png" alt="alt.jpg">
-        <a class="large-button" id="kaliedo-learn-more" href="#">Learn More</a>
+        <figure><img src="res/bolt-promo.png" alt="alt.jpg"></figure>
+        <a class="large-button" id="kaliedo-learn-more" href="#">Customise Now</a>
       </article>
       <article class="firstcrank">
         <div class='image'></div>
@@ -33,10 +36,9 @@
           <h1 class="product-name">FIRST CRANKSET</h1>
           <h3 class="prodcut-price">$48</h3>
           <p class="product-description">The FIRST (Hollowtech) crankset has a 6061 aluminium alloy chainring, combined with a 7701 chromoly steel crank arm with three tubes in each arm, coupled with titanium bolts to ensure maximum rigidity and a smooth and responsive riding experience</p>
-          <a href="#">View Product</a>
+          <a href="#">Add to your build</a>
         </div>
-      </article>
-      <div class="tccontainer"><article class="three-col">
+      </article><article class="three-col">
         <h1>Not Just a Bike Store.</h1>
         <p class="tcdesc">The Five Seven Bicycle store is not just your average bicycle store as we are here to bring the best bicycle experience to the community. To achieve this, our store offers these services and events to help keep the cycling community strong, keep your bikes fresh and ulimately give our customers the best riding experience</p>
         <div class="column" id="col-1">
@@ -54,10 +56,16 @@
           <h2>Community Events</h2>
           <p>We believe that the a bike is best ridden when ridden in a group, this is why we organise mass rides <b>every friday night</b> for the cycling community to get together and have a fun ride as a family. We also <b>organise and sponsor races</b> such as the annual trickster festival and laneway fixed gear crit.</p>
         </div>
-      </article></div>
+      </article>
     </main>
     <footer>
 
     </footer>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById("navigation").classList.toggle("showNav");
+      }
+    </script>
   </body>
 </html>
