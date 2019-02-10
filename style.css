@@ -292,6 +292,11 @@ main.appointment button{
   font-size: 1.2em;
 }
 
+footer{
+  height: 50%;
+  width: 100%;
+}
+
 /* Style the input fields */
 input {
   padding: 10px;
@@ -369,6 +374,11 @@ input.invalid {
   article.firstcrank div.right-pane{
     padding: 30px;
   }
+
+  article.firstcrank h1{
+    font-size: 2.3em;
+  }
+
   article.firstcrank p{
     font-size: 1em;
   }
@@ -384,11 +394,16 @@ input.invalid {
     display: none;
     float: right;
     width: 200px;
+    text-align: center;
+    padding-top: 30px;
+    margin-right: calc(50% - 100px);
   }
 
   header nav a{
     width: 100%;
-    line-height: 4;
+    line-height: 3;
+    text-align: right;
+    margin: 0;
   }
 
   header .container{
