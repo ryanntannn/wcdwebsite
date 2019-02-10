@@ -233,6 +233,76 @@ article.three-col .column p b{
   color: orange;
 }
 
+main.appointment{
+  text-align: center;
+  padding-top: 90px;
+}
+
+main.appointment h1{
+  font-size: 2.6em;
+  color: orange;
+  margin-bottom: 40px;
+}
+
+#regForm {
+  margin: 100px auto;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+}
+
+main.appointment button{
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  background-color: #171717;
+  border: 1px solid #191919;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  text-align: left;
+  color: #dddddd;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: orange;
+}
+
 /* widescreen query */
 @media screen and (max-width: 1360px) {
   article.firstcrank{
@@ -249,6 +319,10 @@ article.three-col .column p b{
     width: 100%;
     /* center align */
     padding: 15% 0% 15% 0;
+  }
+
+  #regForm {
+    width: 70%;
   }
 }
 
