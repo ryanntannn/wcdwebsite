@@ -320,6 +320,16 @@ input.invalid {
   color: #dddddd;
 }
 
+.tab p select{
+  background: #202020;
+  width: 100%;
+  border: none;
+  font-size:1.7em;
+  color:#bbb;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
 /* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
