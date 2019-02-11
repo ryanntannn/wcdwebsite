@@ -53,6 +53,14 @@ function validateForm() {
     // and set the current valid status to false:
     valid = false;
     }
+
+    //Validate valid email
+    if (y[i].type == "email" && !y[i].value.includes("@")) {
+    // add an "invalid" class to the field:
+    y[i].className += " invalid";
+    // and set the current valid status to false:
+    valid = false;
+    }
   }
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {

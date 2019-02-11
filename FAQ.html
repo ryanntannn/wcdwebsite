@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <title>Five Seven Bicycle Company</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="res/logos.png" alt="alt.jpg">
+      </div>
+      <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="customiser.html">Customiser</a>
+        <a href="https://www.instagram.com/cycleprojectstore/?hl=en">Blog</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="#" class = "selected">FAQ</a>
+      </nav>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+      </div>
+    </header>
+    <main class="faq-main">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq">
+      <div class="faq-question">If my bicycle(bought from FIVE7 store) is faulty, what do i do?</div>
+        <div class="faq_answer_container">
+              <div class="faq_answer">Bicycles purchased from FIVE7 Bicycle Company are subject to a 1 month manufactuerer return policy. If your bike has a defect not caused by you, you can come down to the store and get the faulty part replaced. If you are not located in Singapore, you can contact our staff via email for instructions.</div>
+           </div>
+      </div>
+
+      <div class="faq">
+      <div class="faq-question">Can I send my bicycle here for servicing even if I did not purchase my bicycle from the FIVE7 store?</div>
+        <div class="faq_answer_container">
+              <div class="faq_answer">Of course! But do note that there will be a S$50 maintanence fee</div>
+           </div>
+      </div>
+
+    </main>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById("navigation").classList.toggle("showNav");
+      }
+    </script>
+    <script type="text/javascript" src="faq.js"></script>
+  </body>
+</html>

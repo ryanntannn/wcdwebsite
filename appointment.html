@@ -16,10 +16,10 @@
       </div>
       <nav id="navigation">
         <a href="index.html">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Blog</a>
+        <a href="customiser.html">Customiser</a>
+        <a href="https://www.instagram.com/cycleprojectstore/?hl=en">Blog</a>
         <a href="#" class="selected">Appointment</a>
-        <a href="#">FAQ</a>
+        <a href="FAQ.html">FAQ</a>
       </nav>
       <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
@@ -35,9 +35,9 @@
       <div class="tab">
         <p><select name="service">
           <option value="sm">Servicing/Maintainence</option>
-          <option value="nbb">Bike Repair</option>
-          <option value="nfg">New Custom Bicycle Build</option>
-          <option value="nmtb">Part Replacement</option>
+          <option value="br">Bike Repair</option>
+          <option value="nb">New Custom Bicycle Build</option>
+          <option value="pr">Part Replacement</option>
         </select></p>
       </div>
 
@@ -47,8 +47,8 @@
       </div>
 
       <div class="tab">Contact Info:
-        <p><input placeholder="E-mail..." oninput="this.className = ''" required></p>
-        <p><input placeholder="Phone..." oninput="this.className = ''" required></p>
+        <p><input type="email" placeholder="E-mail..." oninput="this.className = ''" required></p>
+        <p><input type="number" placeholder="Phone..." oninput="this.className = ''" required></p>
       </div>
 
       <div class="tab">Date and Time of Appointment:
@@ -76,9 +76,6 @@
       </form>
       <form></form>
     </main>
-    <footer>
-
-    </footer>
     <script type="text/javascript" src="appointment.js"></script>
     <script>
       function myFunction(x) {

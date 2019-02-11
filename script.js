@@ -35,5 +35,15 @@ $(document).ready(function(){
       $("article.kaliedo").css("clip-path", "polygon(100% 0, 100% 100%, 30% 100%, 0 100%, 0 0)");
       $("article.firstcrank").css("top", "20%");
 	  }
+
+    var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+    if(scrollBottom < 60){
+      $("footer").css("bottom", "0");
+    }
+
+    else {
+      $("footer").css("bottom", "calc(-50% - 5px)");
+    }
+
   })
 });
