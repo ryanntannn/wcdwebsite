@@ -55,7 +55,15 @@ function validateForm() {
     }
 
     //Validate valid email
-    if (y[i].type == "email" && !y[i].value.includes("@")) {
+    if (y[i].type == "email" && (!y[i].value.includes("@") || y[i].value.length < 6)) {
+    // add an "invalid" class to the field:
+    y[i].className += " invalid";
+    // and set the current valid status to false:
+    valid = false;
+    }
+
+    //Validate valid mobile number
+    if (y[i].type == "number" && y[i].value.length < 8) {
     // add an "invalid" class to the field:
     y[i].className += " invalid";
     // and set the current valid status to false:

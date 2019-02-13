@@ -28,7 +28,7 @@ body,html{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: orange;
+  background: #ff8800;
 }
 
 /* header styling */
@@ -67,7 +67,7 @@ header nav a{
 }
 
 header nav a.selected{
-  border-bottom: 4px solid orange;
+  border-bottom: 4px solid #ff8800;
 }
 
 header nav a:hover{
@@ -97,7 +97,7 @@ header nav a:hover{
   width: 35px;
   height: 5px;
   margin: 6px;
-  background-color: orange;
+  background-color: #ff8800;
   margin: 0 0;
   transition: 0.4s;
 }
@@ -149,13 +149,15 @@ article.kaliedo a{
   transform: translate(-50%, -50%);
   text-decoration: none;
   color: #121212;
-  background-color: orange;
+  background-color: #ff8800;
   padding: 10px 30px 10px 30px;
   border-radius: 100px;
   font-size: 25px;
   font-weight: 900;
   transition: 0.4s;
 }
+
+/* firstcrank article */
 
 article.firstcrank{
   width: 100%;
@@ -166,7 +168,7 @@ article.firstcrank{
   position: absolute;
   top: 20%;
   transition: 0.8s;
-  border-bottom: 0.7em solid orange;
+  border-bottom: 0.7em solid #ff8800;
   z-index: 40;
 }
 
@@ -202,7 +204,7 @@ article.firstcrank a{
   font-weight:900;
   text-decoration: none;
   color: #121212;
-  background-color: orange;
+  background-color: #ff8800;
   padding: 10px 30px 10px 30px;
   border-radius: 100px;
   font-size: 1.4em;
@@ -231,7 +233,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 article.three-col h1{
   grid-area: tchead;
   text-align: center;
-  color: orange;
+  color: #ff8800;
   font-size: 3.2em;
 }
 
@@ -248,7 +250,7 @@ article.three-col .column{
   background-color: #171717;
   margin: 0 20px 0 20px;
   padding: 40px;
-  border-bottom: 0.4em solid orange;
+  border-bottom: 0.4em solid #ff8800;
 }
 
 article.three-col .column img{
@@ -258,7 +260,7 @@ article.three-col .column img{
 article.three-col .column h2{
   margin-top: 30px;
   font-size:1.8em;
-  color: orange;
+  color: #ff8800;
   height: 90px;
 }
 
@@ -270,7 +272,7 @@ article.three-col .column p{
 }
 
 article.three-col .column p b{
-  color: orange;
+  color: #ff8800;
 }
 
 main.appointment{
@@ -280,7 +282,7 @@ main.appointment{
 
 main.appointment h1{
   font-size: 2.6em;
-  color: orange;
+  color: #ff8800;
   margin-bottom: 40px;
 }
 
@@ -292,7 +294,7 @@ main.appointment h1{
 }
 
 main.appointment button{
-  background-color: orange;
+  background-color: #ff8800;
   border: none;
   padding: 10px;
   font-size: 1.2em;
@@ -305,7 +307,7 @@ footer{
   width: 100%;
   z-index: 100;
   height: 10%;
-  border-top: 5px solid orange;
+  border-top: 5px solid #ff8800;
   background-color: #090909;
   transition: 0.8s;
   text-align: center;
@@ -375,7 +377,7 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: orange;
+  background-color: #ff8800;
 }
 
 main.faq-main{
@@ -386,6 +388,7 @@ main.faq-main{
   min-height: calc(100% - 100px);
 }
 
+/* FAQ Styling */
 .faq{
   text-align: center;
   width: 70%;
@@ -394,9 +397,14 @@ main.faq-main{
 }
 
 .faq-main h1{
-  color: orange;
+  color: #ff8800;
   font-size: 3em;
   margin: 50px;
+}
+
+.faq a{
+  color: darkblue;
+  text-decoration: none;
 }
 
 .faq-question{
@@ -413,14 +421,14 @@ main.faq-main{
 
 .faq-question:hover{
   padding: 15px 0 15px 0;
-  border-bottom: 8px solid orange;
+  border-bottom: 8px solid #ff8800;
 }
 
 .faq_answer_container {
     text-align: left;
     display: none;
     padding: 20px;
-    background-color: orange;
+    background-color: #ff8800;
     color: #000;
     font-size: 1.5em;
 }
@@ -444,8 +452,8 @@ main.faq-main{
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid orange;
-  border-bottom: 16px solid orange;
+  border-top: 16px solid #ff8800;
+  border-bottom: 16px solid #ff8800;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -479,7 +487,7 @@ main.faq-main{
 
 .step-header .number{
   font-size: 2em;
-  border: 3px solid orange;
+  border: 3px solid #ff8800;
   width: 40px;
   height: 40px;
   border-radius: 100px;
@@ -549,7 +557,7 @@ main.faq-main{
 }
 
 .text h1{
-  color:orange;
+  color:#ff8800;
 }
 
 .text p{
@@ -625,7 +633,7 @@ main.thankyou{
 
 .thankyou h1{
   font-size: 4em;
-  color: orange;
+  color: #ff8800;
 }
 
 .thankyou p{
@@ -633,10 +641,86 @@ main.thankyou{
   color: #aaaaaa;
 }
 
+/* about page styling */
+main.about-main{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-auto-rows: 50%;
+  grid-row-gap: 10%;
+  width: 70%;
+  height: 100%;
+  padding: 60px 15%;
+}
+
+main.about-main figure{
+  width: 100%;
+  height: 100%;
+}
+
+main.about-main img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main.about-main article{
+  padding: 20px;
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+main.about-main h1{
+  color: #ff8800;
+  font-size: 3em;
+}
+
+main.about-main p{
+  text-align: justify;
+}
+
+.align-right{
+  text-align: right;
+}
+
+main.about-main a{
+  color: lightblue;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 /* smaller screen query */
 @media screen and (max-width: 1280px) {
   article.firstcrank{
     grid-template-columns: 60% 40%;
+  }
+
+  main.about-main{
+    width: calc(100% - 80px);
+    height: 100%;
+    padding: 60px 40px;
   }
 
   article.firstcrank p{
@@ -655,10 +739,18 @@ main.thankyou{
   #regForm {
     width: 70%;
   }
+
+  main.about-main h1{
+    font-size: 3em;
+  }
+
+  main.about-main p{
+    font-size: 0.9em;
+  }
 }
 
 /* tablet query */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /* WARNING: INCREASED TO 800 to fit ipad */
 
   header{
     display: inline;
@@ -742,6 +834,15 @@ main.thankyou{
   .customiser-section .text p{
     margin: 0;
   }
+
+  main.about-main h1{
+    color: #ff8800;
+    font-size: 2em;
+  }
+
+  main.about-main p{
+    font-size: 0.8em;
+  }
 }
 
 /* mobile query */
@@ -792,7 +893,7 @@ main.thankyou{
 
   .thankyou h1{
     font-size: 3em;
-    color: orange;
+    color: #ff8800;
   }
 
   .thankyou p{
@@ -821,5 +922,16 @@ main.thankyou{
   }
   .text p{
     font-size: 0.9em;
+  }
+
+  main.about-main{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-auto-rows: 50%;
+    grid-row-gap: 5%;
+  }
+
+  main.about-main article{
+    padding: 0px;
   }
 }

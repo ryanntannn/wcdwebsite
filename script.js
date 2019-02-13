@@ -24,7 +24,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 
-	  if (scroll > 300) { //scrolled down from the top
+	  if (scroll > 30) { //scrolled down from the top
 	    $("header").css("background" , "#121212");
       $("article.kaliedo").css("clip-path", "polygon(100% 0, 100% 91%, 60% 100%, 0 92%, 0 0)");
       $("article.firstcrank").css("top", "100%");
